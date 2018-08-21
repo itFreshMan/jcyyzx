@@ -1,0 +1,64 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    application-display-name: #name#
+  error:
+    whitelabel:
+      enabled: false
+logging:
+  level:
+    root: info
+    com.tydic: debug
+  file: logs/#name#.log
+spring:
+  application:
+    name: #name#
+    admin:
+      enabled: #name#
+  # 数据库连接
+  datasource:
+    url: jdbc:oracle:thin:@192.168.128.108:1521:orcl
+    username: FRAMEWORK
+    password: FRAMEWORK
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      maximum-pool-size: 20
+      max-lifetime: 1800000
+      idle-timeout: 30000
+      connection-timeout: 30000
+      data-source-properties:
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        cachePrepStmts: true
+        useServerPrepStmts: true
+      pool-name: Tiny Dicy Pool
+  dubbo:
+    server: true
+    application:
+      name: user-service
+    registry:
+      address: zookeeper://192.168.128.107:7181?backup=192.168.128.107:8181,192.168.128.107:9181
+    protocol:
+      name: dubbo
+      port: 20882
+#      status: server
+#      scan: com.tydic.jcyyzx.facade
+
+# MyBatis
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    cache-enabled: false
+  configuration-properties:
+    dialect: oracle
+mapper:
+  style: camelhumpanduppercase
+  before: true
+pagehelper:
+  helper-dialect: oracle
+  row-bounds-with-count: true
+  offset-as-page-num: true
+
+
+

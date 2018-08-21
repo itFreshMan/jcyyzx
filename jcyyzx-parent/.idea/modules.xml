@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../jcyyzx-common-core/jcyyzx-common-core.iml" filepath="$PROJECT_DIR$/../jcyyzx-common-core/jcyyzx-common-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../jcyyzx-facade-user/jcyyzx-facade-user.iml" filepath="$PROJECT_DIR$/../jcyyzx-facade-user/jcyyzx-facade-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jcyyzx-parent.iml" filepath="$PROJECT_DIR$/jcyyzx-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../jcyyzx-service-user/jcyyzx-service-user.iml" filepath="$PROJECT_DIR$/../jcyyzx-service-user/jcyyzx-service-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../jcyyzx-web-boss/jcyyzx-web-boss.iml" filepath="$PROJECT_DIR$/../jcyyzx-web-boss/jcyyzx-web-boss.iml" />
+    </modules>
+  </component>
+</project>

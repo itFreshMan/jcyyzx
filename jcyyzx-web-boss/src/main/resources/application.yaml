@@ -1,0 +1,13 @@
+server:
+    port: 9080
+    servlet:
+        context-path: /boss
+spring:
+    dubbo:
+#        server:  true
+        application:
+            name: web-boss
+        registry:
+            address: zookeeper://192.168.128.107:7181?backup=192.168.128.107:8181,192.168.128.107:9181
+        protocol:
+            name: dubbo

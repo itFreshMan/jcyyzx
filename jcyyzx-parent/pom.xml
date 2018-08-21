@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.3.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.tydic.jcyyzx</groupId>
+    <artifactId>jcyyzx-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>jcyyzx-parent</name>
+
+    <properties>
+        <resource.delimiter>#</resource.delimiter>
+        <project.encoding>UTF-8</project.encoding>
+        <java.version>1.8</java.version>
+
+        <spring-boot.version>2.0.3.RELEASE</spring-boot.version>
+        <mapper-spring-boot-starter.version>2.0.3</mapper-spring-boot-starter.version>
+        <pagehelper-spring-boot-starter.version>1.2.5</pagehelper-spring-boot-starter.version>
+        <dubbo-spring-boot-starter.version>2.0.0</dubbo-spring-boot-starter.version>
+
+        <commons-beanutils.version>1.9.3</commons-beanutils.version>
+        <vertx-auth-jwt.version>3.5.2</vertx-auth-jwt.version>
+
+        <ojdbc8.version>12.2.0.1</ojdbc8.version>
+        <tk.mybatis.mapper-core.version>1.0.4</tk.mybatis.mapper-core.version>
+        <mybatis-spring-boot-autoconfigure.version>1.3.1</mybatis-spring-boot-autoconfigure.version>
+
+        <lombok.version>1.16.22</lombok.version>
+
+        <common-config.version>1.0-SNAPSHOT</common-config.version>
+        <common-core.version>1.0-SNAPSHOT</common-core.version>
+        <facade-user.version>1.0-SNAPSHOT</facade-user.version>
+        <service-user.version>1.0-SNAPSHOT</service-user.version>
+        <web-boss.version>1.0-SNAPSHOT</web-boss.version>
+    </properties>
+
+</project>
